@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> ROMI & VICTOR  </title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Audifono</td>
+                <td>100.000</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Case</td>
+                <td>30.000</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Cargador</td>
+                <td>80.000</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Total</td>
+            <td>210.000</td>
+            <td>260</td>
+        </tfoot>
+    </table>
+
+    <!-- ul quiere decir lista no ordenada-->
+     <ul>
+        <li>Elemento 1 </li> <!-- li quiere decir item de la lista (del ingles list item)-->
+        <li>Elemento 2 </li>
+        <li>Elemento 3 </li>
+        <li>Elemento 4 </li>
+     </ul>
+    <!-- uo quiere decir lista ordenada-->
+     <ol>
+        <li value="10">Elemento 1 </li>
+        <li>Elemento 2 </li>
+        <li>Elemento 3 </li>
+        <li>
+            <ol>
+                <li style="list-style-type:lower-roman;">sub elemento 1</li>
+                <li style="list-style-type:lower-roman;">sub elemento 2</li>
+                <li style="list-style-type:lower-roman;">sub elemento 3</li>
+                <li style="list-style-type:lower-roman;">sub elemento 4</li>
+            </ol> 
+        </li>  
+     </ol>
+
+    <form action="/Formulario" method="POST"> <!--Post no es seguro por si solo, lo unico que hace es enviar datos a cabeceras. 
+        Solo utilizando con certificados que encripten -->
+        <label for="Nombre">Nombre</label>
+        <input value="chanchito" type="text" id="Nombre" name="Nombre" placeholder="Victor"/>
+        <br>
+        <label for="Apellido">Apellido</label>
+        <input value="feliz" type="text" id="Apellido" placeholder="Lesme"/>
+        <br>
+        <label for="Comentario">Comentario</label>
+        <br>
+        <textarea rows="10" cols="35" id="Comentario" placeholder="ingrese Comentario" name="Comentario">Solo buenos comentarios</textarea>
+        <br>
+        <button type="button"> tipo button </button>
+        <button type="reset"> tipo reset </button>
+        <button type="submit"> tipo submit </button>
+    </form>
+    <h1> Se conocieron en 2023 </h1>
+    <hr>
+    <h2> En su primera salida comieron pizza en Sanber </h2>
+    <p> Romina se hizo la que solamente comía 3 pedazos por lo que una porción quedo sobrando. Luego salieron a caminar por la peatonal al costado del nautico.</p>
+    <p> Durante esa caminata se podía oir musica a lo lejos</p>
+    <p> Romina quería <span style="color:blue">parecer fitness</span> pero ya le picaban las piernas <br> y queria llorar </p>
+    <!-- Esta bien horrible mi primer comentario, no va a 
+     aparecer en el explorador -->
+     <a target="_blank" href="https://www.google.com.py"> Ir a google </a>
+     <hr>
+     <img src="img/fotoRV1.jpg" width="300" /> 
+     <br> <hr>
+     <img src="img/fotoRV2.jpg" width="200" /> 
+</body>
+</html>
