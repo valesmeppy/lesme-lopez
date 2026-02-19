@@ -5,17 +5,32 @@
 </head>
 <body>
         <header>
-            <h1>Lesme & López</h1>
+            <h1 id="titulo">Los Lesme & López</h1>
         </header>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Juan Gónzalez" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" />
+           
+            <br> 
+            <br>
+
+            <label for="archivo">Agrega una foto con nosotros</label>
+            <input type="file" id="archivo" name="archivo" />
+        </form> 
         <div>
+            <hr>
             <!-- Div era mas utilizado antes, ahora se usa mas section la cual contiene a article-->
             <p>
-                Esta página esta dedicada al conocimiento 
-                de las raices de la familia Lesme Lopez
+                <span style="color:lightcoral"> Esta página esta dedicada al conocimiento 
+                de las raices de la familia Lesme Lopez</span>
             </p>
         </div>
         <section> 
-            <article>
+            <article class="post">
+                <hr>
                 <h2>Sobre Nosotros</h2>
                 <p>
                     Romina nació el 01 de novimebre de 1999 
@@ -28,53 +43,48 @@
                 </p>
             </article>
             <!-- Este es otro articulo pueden haber tantos como queramos-->
-            <article>
-                <h2>Los terribles </h2>
+            <article class="post">
+                <hr>
+                <h3>Los terribles </h3>
                 <p>
                     Tiziana nació el 22 de agosto de 2019 y 
-                    no fue hasta diciembre de 2023 que llegó Tiago el
+                    no fue hasta diciembre de 2023 <br> que llegó Tiago el
                     integrante mas jovén de la familia
                 </p>
-                <img src="img/fotoRV2.jpg" height="300" />
-                <p> 
-                    Esta es Tiziana de bebé
-                </p>
-                <img src="img/fotoRV3.JPG" height="300" />
-                <p> Y esté es Tiago de bebé</p>
+                <img src="img/fotoRV2.jpg" height="300" /> <img src="img/fotoRV3.JPG" height="300" />
+                <p> Estos son ellos de bebes</p>
             </article>
-            <article>
-                <h2>Nuestros trabajos </h2>
+            <article class="post">
+                <hr>
+                <h3>Nuestros trabajos</h3>
                 <p>
-                    Romina trabaja en una consultora de comercio internacional, la cual se llama Procyon,
-                    Victor por su parte esta en una empresa inmobiliaria llamada Intermer. Ya Tiziana y Tiago van
-                    al CIEK y a Kinderplay
+                    Romina trabaja en una consultora de comercio internacional, la cual se llama Procyon.
+                    <br> 
+                    Victor por su parte esta en una empresa inmobiliaria llamada Intermer.
+                    <br>
+                    Ya Tiziana y Tiago van al CIEK y a Kinderplay
                 </p>
                 <img src="img/fotoRV4.jpg" height="300" />
                 <p> 
                     No somos machos pero somos muchos
                 </p> <!-- p es para parrafos -->
             </article>
-            <article>
-                <h2>Nuestras musicas </h2>
-                <a href="https://www.youtube.com/watch?v=DCGkzsaNZHA" target="_blank"> Nenita - Manuel Medrano</a>
-                <br>
-                <img src="img/fotoRV5.jfif" height="200" />
-                <br>
-                <a href="https://www.youtube.com/watch?v=jhMiIUb2GEA" target="_blank"> Primera cita - Carin Leon</a>
-                <br>
-                <img src="img/fotoRV6.jpg" height="200" />
-                <br>
-                <a href="https://www.youtube.com/watch?v=Lt2jQo_PVQo&list=RDLt2jQo_PVQo&start_radio=1" target="_blank"> Esta noche - Manuel Medrano</a>
-                <br>
-                <img src="img/fotoRV7.jpg" height="200" />
-                <br>            
-                <br>
+            <article class="post">
+                <hr>
+                <h3>Nuestras musicas </h3>
+                <a href="https://www.youtube.com/watch?v=DCGkzsaNZHA" target="_blank"><img src="img/fotoRV5.jfif" height="200" /></a>
+                <a href="https://www.youtube.com/watch?v=jhMiIUb2GEA" target="_blank"><img src="img/fotoRV7.jpg" height="200" /></a>
+                <a href="https://www.youtube.com/watch?v=Lt2jQo_PVQo&list=RDLt2jQo_PVQo&start_radio=1" target="_blank"> <img src="img/fotoRV6.jpg" height="200" /></a>          
                 <p> Entre otras tantas que se escuchan en nuestros viajes de coche</p>
                 <hr>
             </article>
         </section>
         <footer> 
-            <a href="mailto:dobleele@gmail.com.py">link de correo</a> <!-- a es para hipervinculo-->
+            <a href="#titulo">Ir al comienzo</a>
+            <br><br>
+            <a href="mailto:dobleele@gmail.com.py">link de correo</a> 
+            <br><br>
+            <!-- a es para hipervinculo-->
             <a href="https://wa.me/595985409535" target="_blank">link de whatsapp</a>
             <p>Copyright 2026</p>
         </footer>
