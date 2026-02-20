@@ -7,19 +7,24 @@
         <header>
             <h1 id="titulo">Los Lesme & López</h1>
         </header>
-        <form>
+        <form action="/formulario" method="post"> <!--Puede ser get o post-->
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" placeholder="Juan Gónzalez" />
-
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" />
-           
-            <br> 
-            <br>
-
+            <br><br>
             <label for="archivo">Agrega una foto con nosotros</label>
             <input type="file" id="archivo" name="archivo" />
-        </form> 
+            <br>
+            <label for="comentario">Comenarios</label>
+            <br>
+            <textarea rows=5 cols=70 id="comentario" placeholder="Ingrese su comentario" name="comentario"></textarea>
+            <br>
+            <button type="button">Accion</button> <!-- tambien puede ser 
+            pero mas limitado input type submit-->
+            <button type="reset">Borrar</button>
+            <button type="submit">Enviar</button>
+        </form> <!--crtl + space = options, por defecto toma submit -->
         <div>
             <hr>
             <!-- Div era mas utilizado antes, ahora se usa mas section la cual contiene a article-->
@@ -33,8 +38,25 @@
                 <hr>
                 <h2>Sobre Nosotros</h2>
                 <p>
-                    Romina nació el 01 de novimebre de 1999 
-                    y Victor cuatro años antes en junio de 1995
+                    Romina nació el 01 de novimebre de:
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="ano" value="1999" /> 1999
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="ano" value="1998" /> 1998
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="ano" value="1997" /> 1997
+                            </label>
+                        </li>
+                    </ul>
+                    y Victor cuatro años antes en junio de <label><input type="text" /> </label>
                 </p>
                 <img src="img/fotoRV1.jpg" height="300" />
                 <p> 
@@ -80,7 +102,7 @@
             </article>
         </section>
         <footer> 
-            <a href="#titulo">Ir al comienzo</a>
+            <a href="#titulo"><img src="img/fotoRV8.png"></a>
             <br><br>
             <a href="mailto:dobleele@gmail.com.py">link de correo</a> 
             <br><br>
